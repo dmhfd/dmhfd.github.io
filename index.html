@@ -170,7 +170,7 @@
 
 <body>
   <div class="loader" id="loader">
-    <span class="loader-text"><b>正在提交数据</b></span>
+    <div class="loader-text"></div>
   </div>
   <div class="circle" id="circle">
     <div class="checkmark" id="checkmark"></div>
@@ -183,7 +183,7 @@
     var checkmark = document.getElementById("checkmark");
     function showLoader() {
       loader.style.display = "block";
-      loaderText.textContent = "正在提交数据";
+      loaderText.textContent = "正在提交数据...";
     }
     function hideLoader() {
       loader.style.display = "none";
