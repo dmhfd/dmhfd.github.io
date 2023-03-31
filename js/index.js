@@ -35,11 +35,13 @@ class GeeTest {
                         geetest_seccode: result.geetest_seccode
                     }),
                     dataType: 'json',
+                    success: function() {
+                        window.hideLoader();
+                        setTimeout(() => {
+                            alert('验证成功！');
+                        }, 100);
+                    }
                 });
-                setTimeout(() => {
-                    window.hideLoader();
-                    alert('验证成功！');
-                }, 1500);
             }).onError(err => {
                 if (err.msg == 'old challenge')
                     alert('验证码已被使用');
