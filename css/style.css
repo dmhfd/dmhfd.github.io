@@ -64,8 +64,8 @@
 .checkmark {
   width: 30px;
   height: 60px;
-  border-bottom: 10px solid #00ff00;
-  border-right: 10px solid #00ff00;
+  border-bottom: 10px solid #96ff96;
+  border-right: 10px solid #96ff96;
   transform-origin: middle;
   position: absolute;
   transform: translate(-50%, -50%);

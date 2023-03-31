@@ -40,11 +40,6 @@
         context.fillText(this.text, this.x, this.y);
       }
     }
-    function drawMoon() {
-      var moon = new Image();
-      moon.src = "./images/moon.jpg"
-      context.drawImage(moon, -5, -10);
-    }
     window.onload = function () {
       init();
       for (var i = 0; i < starCount; i++) {
@@ -59,7 +54,6 @@
         rain.draw();
         rains.push(rain);
       }
-      drawMoon();
       playStars();
       playRains();
     }
