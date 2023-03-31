@@ -6,19 +6,30 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(to right, #00b09b, #96c93d);
   color: white;
   border: none;
   border-radius: 25px;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+  background: linear-gradient(to right, #583fff, #2fff52);
+}
+
+.centered-button::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 30px;
+  border: 5px solid white;
 }
 
 .centered-button:active {
   transform: translate(-50%, -50%) translateY(2px);
   box-shadow: none;
-  background: linear-gradient(to right, #00885a, #7fb800);
+  background: linear-gradient(to right, #4124fc, #12ff39);
 }
 
 .circle {
