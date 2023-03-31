@@ -39,8 +39,9 @@ class GeeTest {
                         window.hideLoader();
                         window.showSuccess();
                     },
-                    error: function () {
+                    error: function (data) {
                         alert('验证数据上传错误');
+                        console.log(data);
                     }
                 });
             }).onError(err => {
