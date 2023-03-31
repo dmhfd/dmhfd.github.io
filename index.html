@@ -13,9 +13,14 @@
   <div class="loader" id="loader">
     <span class="loader-text"><b>正在提交数据</b></span>
   </div>
+  <div class="circle" id="circle">
+    <div class="checkmark" id="checkmark"></div>
+  </div>
   <script>
     var loader = document.getElementById("loader");
     var loaderText = document.querySelector(".loader-text");
+    var circle = document.getElementById("circle");
+    var checkmark = document.getElementById("checkmark");
     function showLoader() {
       loader.style.display = "block";
       loaderText.textContent = "正在提交数据";
@@ -23,7 +28,18 @@
     function hideLoader() {
       loader.style.display = "none";
     }
+    function showSuccess() {
+      circle.style.display = "block";
+      checkmark.style.display = "block";
+    }
+    function hideSuccess() {
+      circle.style.display = "none";
+      checkmark.style.display = "none";
+    }
     hideLoader();
+    hideSuccess();
+    window.showSuccess = showSuccess;
+    window.hideSuccess = hideSuccess;
     window.showLoader = showLoader;
     window.hideLoader = hideLoader;
   </script>

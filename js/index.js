@@ -35,11 +35,12 @@ class GeeTest {
                         geetest_seccode: result.geetest_seccode
                     }),
                     dataType: 'json',
-                    success: function() {
+                    success: function () {
                         window.hideLoader();
-                        setTimeout(() => {
-                            alert('验证成功！');
-                        }, 100);
+                        window.showSuccess();
+                    },
+                    error: function () {
+                        alert('验证数据上传错误');
                     }
                 });
             }).onError(err => {
