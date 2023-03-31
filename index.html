@@ -9,25 +9,24 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<script>
-  var loader = document.getElementById("loader");
-  var loaderText = document.querySelector(".loader-text");
-  function showLoader() {
-    loader.style.display = "block";
-    loaderText.textContent = "正在提交数据";
-  }
-  function hideLoader() {
-    loader.style.display = "none";
-  }
-  hideLoader();
-  window.showLoader = showLoader;
-  window.hideLoader = hideLoader;
-</script>
-
 <body>
   <div class="loader" id="loader">
     <span class="loader-text"><b>正在提交数据</b></span>
   </div>
+  <script>
+    var loader = document.getElementById("loader");
+    var loaderText = document.querySelector(".loader-text");
+    function showLoader() {
+      loader.style.display = "block";
+      loaderText.textContent = "正在提交数据";
+    }
+    function hideLoader() {
+      loader.style.display = "none";
+    }
+    hideLoader();
+    window.showLoader = showLoader;
+    window.hideLoader = hideLoader;
+  </script>
   <button id="verify-button" class="centered-button">验 证</button>
   <script src="https://static.geetest.com/static/js/gt.0.4.9.js"></script>
   <script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js"></script>
