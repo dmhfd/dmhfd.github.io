@@ -41,7 +41,7 @@ class GeeTest {
                     },
                     error: function (data) {
                         console.log(data);
-                        alert('验证数据上传错误' + data);
+                        alert('验证数据上传错误' + data?.toString());
                     }
                 });
             }).onError(err => {
