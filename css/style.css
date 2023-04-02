@@ -64,8 +64,8 @@
 .checkmark {
   width: 30px;
   height: 60px;
-  border-bottom: 10px solid #96ff96;
-  border-right: 10px solid #96ff96;
+  border-bottom: 10px solid #7eff7e;
+  border-right: 10px solid #7eff7e;
   transform-origin: middle;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -115,11 +115,11 @@
   content: "";
   display: block;
   border: 16px solid white;
-  border-top: 16px solid #3498db;
+  border-top: 16px solid #08b6fb;
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 1s linear infinite;
+  animation: spin 0.4s linear infinite;
 }
 
 .loader-text {
