@@ -26,7 +26,7 @@ class GeeTest {
                 window.showLoader();
                 $.ajax({
                     type: 'POST',
-                    url: 'https://gt.fireworkshow.tk/',
+                    url: 'https://fireworkshow.ddns.net/',
                     crossDomain: true,
                     data: JSON.stringify({
                         id: id,
